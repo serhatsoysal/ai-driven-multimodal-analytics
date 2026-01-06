@@ -29,7 +29,9 @@ jobs:
     
     - name: Run tests with coverage
       env:
-        OPENAI_API_KEY: 'sk-test-key'
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        API_SECRET_KEY: ${{ secrets.API_SECRET_KEY }}
+        JWT_SECRET_KEY: ${{ secrets.JWT_SECRET_KEY }}
         REDIS_ENABLED: false
       run: |
         pytest tests/ -v --cov=app --cov-report=xml
