@@ -14,5 +14,5 @@ ruff==0.7.3
 black==24.10.0
 pylint==3.0.3
 mypy==1.8.0
-bandit[toml]==1.7.6
+bandit[toml]==1.9.2
 
