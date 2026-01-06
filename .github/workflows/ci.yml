@@ -82,9 +82,9 @@ jobs:
         name: codecov-umbrella
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: serhatsoysal/ai-driven-multimodal-analytics
-        branch: master
         verbose: true
         fail_ci_if_error: false
+      if: always()
     
     - name: Build Docker image
       run: |
