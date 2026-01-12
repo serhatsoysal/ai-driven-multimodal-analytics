@@ -3,7 +3,7 @@ uvicorn[standard]==0.32.0
 pydantic==2.9.2
 pydantic-settings==2.6.0
 openai==1.54.0
-redis[hiredis]==5.2.0
+redis[hiredis]==7.1.0
 python-multipart==0.0.12
 aiofiles==24.1.0
 pytest==8.3.3
